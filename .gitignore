@@ -1,0 +1,32 @@
+
+target/
+dbt_packages/
+logs/
+.env
+
+# ====================================================================
+# ENTERPRISE DATA PLATFORM GIT IGNORE PROFILE
+# ====================================================================
+
+# Local Python Virtual Environments
+de_env/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# dbt Temporary Runtime Artifacts & Compiled SQL
+target/
+dbt_packages/
+logs/dbt.log
+modules/
+
+# Local Automation Telemetry Logs (Preserving the directory structure, excluding raw runs)
+/logs/*
+!/logs/.gitkeep
+
+# Operating System & Concurrency Lock Markers
+.DS_Store
+/tmp/
+*.lock
+

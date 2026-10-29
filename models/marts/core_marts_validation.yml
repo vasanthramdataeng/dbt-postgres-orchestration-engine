@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: dim_customers
+    columns:
+      - name: customer_key
+        data_tests:
+          - unique
+          - not_null
+
+  - name: dim_products
+    columns:
+      - name: product_key
+        data_tests:
+          - unique
+          - not_null
+
+  - name: fact_store_sales
+    columns:
+      - name: sales_fact_key
+        data_tests:
+          - unique
+          - not_null
+      - name: customer_key
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_key
+      - name: product_key
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('dim_products')
+              field: product_key

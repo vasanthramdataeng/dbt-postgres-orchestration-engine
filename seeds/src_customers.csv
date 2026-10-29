@@ -1,0 +1,3 @@
+customer_id,customer_name,email_address,country,registration_date
+1,Vasanth Kumar,vasanth@example.com,IN,2026-10-25
+2,John Doe,john@example.com,US,2026-10-24
