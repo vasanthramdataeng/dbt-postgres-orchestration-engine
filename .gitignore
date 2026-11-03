@@ -30,3 +30,11 @@ modules/
 /tmp/
 *.lock
 
+
+# PySpark and JVM runtime exclusions
+.ivy/
+metastore_db/
+derby.log
+checkpoint/
+*.kv
+pip_tmp/
