@@ -38,3 +38,4 @@ derby.log
 checkpoint/
 *.kv
 pip_tmp/
+phase4_pyspark/sample_data/
