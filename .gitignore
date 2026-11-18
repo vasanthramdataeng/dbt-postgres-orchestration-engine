@@ -40,3 +40,4 @@ checkpoint/
 pip_tmp/
 phase4_pyspark/sample_data/
 phase4_pyspark/jars/
+lakehouse_orders_delta/
